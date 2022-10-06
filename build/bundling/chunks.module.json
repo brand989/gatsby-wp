@@ -1,0 +1,46 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "8a6ea5dcd7069ccc9ba0",
+  "publicPath": "",
+  "outputPath": "C:\\js\\gatsby-wp\\build\\static",
+  "assetsByChunkName": {
+    "prodom": "prodom.module.js"
+  },
+  "assets": [
+    {
+      "name": "prodom.module.js",
+      "size": 6783643,
+      "chunks": [
+        "prodom"
+      ],
+      "chunkNames": [
+        "prodom"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "namedChunkGroups": {
+    "prodom": {
+      "chunks": [
+        "prodom"
+      ],
+      "assets": [
+        "prodom.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "prodom",
+      "files": [
+        "prodom.module.js"
+      ]
+    }
+  ]
+}
