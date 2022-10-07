@@ -14,7 +14,7 @@ const Root = ({ state, actions }) => {
   return (
     <>
     <Head>
-        <title>My First Frontity Theme</title>
+        <title>Prodom</title>
         <meta
           name="description"
           content="Based on the Frontity step by step tutorial"
