@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "6a2af36b213961b229cb",
+  "hash": "222723188b7037def199",
   "publicPath": "",
-  "outputPath": "C:\\js\\gatsby-wp\\build\\static",
+  "outputPath": "C:\\обучение\\js\\gatsby-wp\\build\\static",
   "assetsByChunkName": {
     "prodom": [
       "prodom.module.js",
-      "prodom.a4afa4ff90885566c4a3.hot-update.js"
+      "prodom.32b7b070fb121d6eb702.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "a4afa4ff90885566c4a3.hot-update.json",
+      "name": "32b7b070fb121d6eb702.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "prodom.a4afa4ff90885566c4a3.hot-update.js",
-      "size": 20471,
+      "name": "prodom.32b7b070fb121d6eb702.hot-update.js",
+      "size": 53740,
       "chunks": [
         "prodom"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "prodom.module.js",
-      "size": 6791278,
+      "size": 6801647,
       "chunks": [
         "prodom"
       ],
@@ -58,7 +58,7 @@
       ],
       "assets": [
         "prodom.module.js",
-        "prodom.a4afa4ff90885566c4a3.hot-update.js"
+        "prodom.32b7b070fb121d6eb702.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -70,7 +70,7 @@
       "id": "prodom",
       "files": [
         "prodom.module.js",
-        "prodom.a4afa4ff90885566c4a3.hot-update.js"
+        "prodom.32b7b070fb121d6eb702.hot-update.js"
       ]
     }
   ]

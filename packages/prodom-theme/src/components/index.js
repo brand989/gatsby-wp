@@ -53,6 +53,15 @@ const Root = ({ state, actions }) => {
         </HeaderContent>
       </Header>
       <Main>
+        <MenuLink>
+        {data.items.map((item) => {
+          const link = '#' + item.id
+          console.log(link)
+           return (<a key={item.id} href={link}>
+            {item.id}
+            </a>
+          )})}
+        </MenuLink>
             <Switch>
             <Loading when={data.isFetching} />
             <List when={data.isArchive} />
@@ -127,4 +136,8 @@ const Button = styled.button`
     cursor: pointer;
     color: #888;
   }
+`
+
+const MenuLink= styled.div`
+background-color: #e5edee;
 `
