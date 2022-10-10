@@ -53,22 +53,27 @@ const Root = ({ state, actions }) => {
         </HeaderContent>
       </Header>
       <Main>
-        <MenuLink>
-        {data.items.map((item) => {
-          const link = '#' + item.id
-          console.log(link)
-           return (<a key={item.id} href={link}>
-            {item.id}
-            </a>
-          )})}
-        </MenuLink>
+              {data.isArchive && 
+                <MenuLink>
+                {data.items.map((item) => {
+                  const link = '#' + item.id
+                  console.log(link)
+                  return (<a key={item.id} href={link}>
+                    {item.id}
+                    </a>
+                  )})}
+                </MenuLink>
+              }
+              
+        
             <Switch>
-            <Loading when={data.isFetching} />
-            <List when={data.isArchive} />
-            <Post when={data.isPost} />
-            <Page when={data.isPage} />
-            <Page when={data.isDestinations}/>
-            <Error when={data.isError} />
+              
+              <Loading when={data.isFetching} />
+              <List when={data.isArchive} />
+              <Post when={data.isPost} />
+              <Page when={data.isPage} />
+              <Page when={data.isDestinations}/>
+              <Error when={data.isError} />
             </Switch>
       </Main>
     </>

@@ -18,3 +18,5 @@ const Page = ({ state }) => {
 }
 
 export default connect(Page)
+
+

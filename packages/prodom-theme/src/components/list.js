@@ -6,6 +6,9 @@ import Link from "@frontity/components/link"
 
 const List = ({ state, actions, libraries }) => {
   const data = state.source.get(state.router.link)
+  const dataNews = data.items.filter((item) => state.source[item.type][item.id].categories.find(el=>el==8) )
+  console.log(dataNews)
+  console.log(data)
   const [contentWindow, setcontentWindow] = useState('');
   const [visible, setVisible] = useState(false);
   const Html2React = libraries.html2react.Component
@@ -19,8 +22,10 @@ const List = ({ state, actions, libraries }) => {
 
   return (
     <Items>
-      {data.items.map((item) => {
+      {dataNews.map((item) => {
+
         const post = state.source[item.type][item.id]
+        
         const media = state.source.post[item.id].featured_media
         const mediaUrl = state.source.attachment[`${media}`]
         let image

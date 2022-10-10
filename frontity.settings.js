@@ -2,7 +2,7 @@ const settings = {
   "name": "prodom",
   "state": {
     "frontity": {
-      "url": "http://wp-frontity",
+      "url": "http://wp-react:8080/",
       "title": "Test Frontity Blog",
       "description": "WordPress installation for Frontity development"
     }
@@ -15,7 +15,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "http://wp-frontity",
+          "url": "http://wp-react:8080/",
           "postTypes": [
             {
               type: "destinations",
