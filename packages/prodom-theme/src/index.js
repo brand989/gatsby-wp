@@ -16,6 +16,7 @@ const prodom = {
       toggleUrl: ({ state }) => {
         state.theme.isUrlVisible = !state.theme.isUrlVisible
       },
+      restApiPrefix: "http://prodom.pro/wp-json/wp/v2/",
     },
   },
   libraries: {

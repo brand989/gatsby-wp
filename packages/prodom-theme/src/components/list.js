@@ -6,7 +6,7 @@ import Link from "@frontity/components/link"
 
 const List = ({ state, actions, libraries }) => {
   const data = state.source.get(state.router.link)
-  const dataNews = data.items.filter((item) => state.source[item.type][item.id].categories.find(el=>el==8) )
+  const dataNews = data.items.filter((item) => state.source[item.type][item.id].categories.find(el=>el==3) )
   console.log(dataNews)
   console.log(data)
   const [contentWindow, setcontentWindow] = useState('');
