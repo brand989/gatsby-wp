@@ -27,55 +27,141 @@ const Root = ({ state, actions }) => {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        border: 0px;
+        };
+        html,
+        body {
+          height: 100%;
+          min-width: 320px;
+        };
+          body {
+            line-height: 1;
+            font-family: "RoadRadio";
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+          };
+        :focus,
+        :active {
+        outline: none;
         }
-          html {
-            font-family: system-ui, Verdana, Arial, sans-serif;
-          }
+
+        a:focus,
+        a:active {
+          outline: none;
+        }
+
+        aside,
+        nav,
+        footer,
+        header,
+        section {
+          display: block;
+        }
+        
+        input,
+        button,
+        textarea {
+          font-family: "RoadRadio";
+        }
+
+        input::-ms-clear {
+          display: none;
+        }
+
+        button {
+          cursor: pointer;
+        }
+
+        button::-moz-focus-inner {
+          padding: 0;
+          border: 0;
+        }
+
+        a,
+        a:visited {
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+        ul li {
+          list-style: none;
+        }
+
+        img {
+          vertical-align: top;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-weight: inherit;
+          font-size: inherit;
+        }
+
+        body {
+          color: #000;
+          font-size: 14px;
+        }
+
+        body._lock {
+          overflow: hidden;
+        }
         `}
       />
-    <Header>
-        <Menu>
-
-        </Menu>
-      </Header>
+    <Wrapper>
+      <Header/>
       <Main>
-              {data.isArchive && 
-                <MenuLink>
-                {data.items.map((item) => {
-                  const link = '#' + item.id
-                  console.log(link)
-                  return (<a key={item.id} href={link}>
-                    {item.id}
-                    </a>
-                  )})}
-                </MenuLink>
-              }
-              
-        
-            <Switch>
-              
-              <Loading when={data.isFetching} />
-              <List when={data.isArchive} />
-              <Post when={data.isPost} />
-              <Page when={data.isPage} />
-              <Page when={data.isDestinations}/>
-              <Error when={data.isError} />
-            </Switch>
+                  {data.isArchive && 
+                    <MenuLink>
+                    {data.items.map((item) => {
+                      const link = '#' + item.id
+                      console.log(link)
+                      return (<a key={item.id} href={link}>
+                        {item.id}
+                        </a>
+                      )})}
+                    </MenuLink>
+                  }
+                
+          
+              <Switch>
+                
+                <Loading when={data.isFetching} />
+                <List when={data.isArchive} />
+                <Post when={data.isPost} />
+                <Page when={data.isPage} />
+                <Page when={data.isDestinations}/>
+                <Error when={data.isError} />
+              </Switch>
       </Main>
+    </Wrapper>
     </>
   )
 }
 
 export default connect(Root)
 
-
-
-
-const HeaderContent = styled.div`
-  max-width: 800px;
-  padding: 2em 1em;
-  margin: auto;
+const Wrapper = styled.div`
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 `
+
+
 
 const Main = styled.main`
   max-width: 800px;
