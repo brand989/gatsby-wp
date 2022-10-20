@@ -8,6 +8,7 @@ import Page from "./page"
 import Loading from "./loading"
 import Error from "./error"
 import Header from "./header"
+import Main from "./main"
 
 const Root = ({ state, actions }) => {
   const data = state.source.get(state.router.link)
@@ -58,7 +59,7 @@ const Root = ({ state, actions }) => {
         section {
           display: block;
         }
-        
+
         input,
         button,
         textarea {
@@ -117,7 +118,11 @@ const Root = ({ state, actions }) => {
       />
     <Wrapper>
       <Header/>
-      <Main>
+      <Main/>
+
+
+
+      <Maine>
                   {data.isArchive && 
                     <MenuLink>
                     {data.items.map((item) => {
@@ -140,7 +145,7 @@ const Root = ({ state, actions }) => {
                 <Page when={data.isDestinations}/>
                 <Error when={data.isError} />
               </Switch>
-      </Main>
+      </Maine>
     </Wrapper>
     </>
   )
@@ -163,7 +168,7 @@ const Wrapper = styled.div`
 
 
 
-const Main = styled.main`
+const Maine = styled.main`
   max-width: 800px;
   padding: 1em;
   margin: auto;

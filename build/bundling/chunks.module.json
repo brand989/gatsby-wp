@@ -1,24 +1,34 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "cce3acda06908a6f8822",
+  "hash": "5828bc6e15f29a92f0da",
   "publicPath": "",
   "outputPath": "C:\\js\\gatsby-wp\\build\\static",
   "assetsByChunkName": {
     "prodom": [
       "prodom.module.js",
-      "prodom.430e750c4c1842ca414b.hot-update.js"
+      "prodom.98869d6f97fea9f2012a.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "430e750c4c1842ca414b.hot-update.json",
+      "name": "98869d6f97fea9f2012a.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
       "info": {
         "hotModuleReplacement": true,
         "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/logo.svg",
+      "size": 884,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/prodom-theme/uploud/logo.svg"
       },
       "emitted": false
     },
@@ -33,8 +43,8 @@
       "emitted": false
     },
     {
-      "name": "prodom.430e750c4c1842ca414b.hot-update.js",
-      "size": 23543,
+      "name": "prodom.98869d6f97fea9f2012a.hot-update.js",
+      "size": 4176,
       "chunks": [
         "prodom"
       ],
@@ -49,7 +59,7 @@
     },
     {
       "name": "prodom.module.js",
-      "size": 6840332,
+      "size": 6867794,
       "chunks": [
         "prodom"
       ],
@@ -68,7 +78,7 @@
       ],
       "assets": [
         "prodom.module.js",
-        "prodom.430e750c4c1842ca414b.hot-update.js"
+        "prodom.98869d6f97fea9f2012a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -80,7 +90,7 @@
       "id": "prodom",
       "files": [
         "prodom.module.js",
-        "prodom.430e750c4c1842ca414b.hot-update.js"
+        "prodom.98869d6f97fea9f2012a.hot-update.js"
       ]
     }
   ]
